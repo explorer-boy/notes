@@ -14,7 +14,6 @@ maven的配置信息都在`sttings.xml`文件中
 
 ### 配置阿里云镜像仓库
 maven的中心仓库地址是外网下载东西很慢，所以配置国内阿里云的镜像仓库地址
-在`<settings></settings>`标签中添加以下内容
 ```xml
 <mirrors>
 	<mirror>
