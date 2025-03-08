@@ -2,9 +2,9 @@
 
 ## 下载手机的系统包
 
-Google 官方包：https://developers.google.com/android/images?hl=zh-cn
+> Google 官方包：https://developers.google.com/android/images?hl=zh-cn
 
-本测试手机是Pixel 5(redfin) Android 14.0.0 (UP1A.231005.007, 2023 年 10 月) 的系统
+本测试手机是 Pixel 5(redfin) Android 14.0.0 (UP1A.231005.007, 2023 年 10 月) 的系统
 
 ![](assets/20250222170010.png)
 
@@ -14,9 +14,9 @@ Google 官方包：https://developers.google.com/android/images?hl=zh-cn
 
 ## 在电脑上配置 adb 环境
 
-adb 说明：https://developer.android.com/tools/adb?hl=zh-cn
+> adb 说明：https://developer.android.com/tools/adb?hl=zh-cn
 
-SDK 下载：https://developer.android.com/tools/releases/platform-tools?hl=zh-cn
+> SDK 下载：https://developer.android.com/tools/releases/platform-tools?hl=zh-cn
 
 Android 调试桥 (adb - Android Debug Bridge) 是一种功能多样的命令行工具，可让您与设备进行通信。adb 命令可用于执行各种设备操作，例如安装和调试应用。adb 提供对 Unix shell（可用来在设备上运行各种命令）的访问权限。
 
@@ -30,13 +30,13 @@ Android 调试桥 (adb - Android Debug Bridge) 是一种功能多样的命令行
 
 ## 安装 Google USB 驱动
 
-Google 官方地址：https://developer.android.com/studio/run/win-usb
+> Google 官方地址：https://developer.android.com/studio/run/win-usb
 
 下载驱动
 
 ![](assets/20250222173625.png)
 
-进入 Windows 的 ⌊设备管理器⌉ 中会有一个pixel 5手机设备，鼠标右键选择 更新驱动 ，选择到下载驱动的目录
+进入 Windows 的 ⌊设备管理器⌉ 中会有一个 pixel 5 手机设备，鼠标右键选择 更新驱动 ，选择到下载驱动的目录
 
 ## 解锁 Bootloader
 
@@ -62,7 +62,7 @@ Google 官方地址：https://developer.android.com/studio/run/win-usb
 adb reboot bootloader
 ```
 
-查看进入到Bootloader界面后电脑是否能够正常检测到手机
+查看进入到 Bootloader 界面后电脑是否能够正常检测到手机
 
 ```
 fastboot devices
@@ -102,7 +102,7 @@ flash-all.bat
 
 ## 安装 Magisk
 
-Magisk Github 地址：https://github.com/topjohnwu/Magisk
+> Magisk Github 地址：https://github.com/topjohnwu/Magisk
 
 使用 adb 安装 app
 
@@ -156,5 +156,8 @@ magisk 板块内的「当前」就会从「无法读取」变成 Magisk app 的�
 
 ## Magisk 模块
 
-https://github.com/Magisk-Modules-Repo/movecert/
+> LSP 框架：https://github.com/LSPosed/LSPosed
 
+> shamiko 隐藏root：https://magiskcn.com/shamiko-install.html
+
+> Android 14 证书安装：https://github.com/wjf0214/Magisk-MoveCACerts
