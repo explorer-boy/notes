@@ -2,6 +2,17 @@
 
 > ARL 安装参考：https://github.com/Aabyss-Team/ARL
 
+## 忘记密码重置
+
+当忘记了登录密码，可以执行下面的命令，然后使用 `admin/admin123` 就可以登录了。
+
+```
+docker exec -ti arl_mongodb mongo -u admin -p admin
+use arl
+db.user.drop()
+db.user.insert({ username: 'admin',  password: hex_md5('arlsalt!@#'+'admin123') })
+```
+
 ## 灯塔增加任务扫描进程
 
 修改文件 `ARL/misc/arl-worker.service` 和 `/etc/systemd/system/arl-worker.service`
